@@ -3,17 +3,17 @@ package xyz.itwill06.aop;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class HewonApp {
-	public static void main(String[] args) {
-		ApplicationContext context=new ClassPathXmlApplicationContext("06-1_aop.xml");
-		HewonService service=context.getBean("hewonService", HewonService.class);
+public class AopAnnotationApp {
+	public static void main(String[] args) throws Exception {
+		ApplicationContext context=new ClassPathXmlApplicationContext("06-5_aopAnnotation.xml");
+		AopAnnotationBean bean=context.getBean("aopAnnotationBean", AopAnnotationBean.class);
 		System.out.println("==============================================================");
-		service.addHewon(null);
+		bean.display1();
 		System.out.println("==============================================================");
-		service.getHewon(0);
+		bean.display2();
 		System.out.println("==============================================================");
-		service.getHewonList();
+		bean.display3();
 		System.out.println("==============================================================");
-		((ClassPathXmlApplicationContext)context).close();
+		((ClassPathXmlApplicationContext)context).close();			
 	}
 }

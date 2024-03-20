@@ -6,6 +6,4 @@ public interface HewonService {
 	void addHewon(Hewon Hewon);
 	Hewon getHewon(int num);
 	List<Hewon> getHewonList();
-	
-
 }

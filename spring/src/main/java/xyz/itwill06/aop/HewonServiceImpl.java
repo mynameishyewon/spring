@@ -4,27 +4,27 @@ import java.util.List;
 
 import lombok.Setter;
 
-public class HewonServiceImpl implements HewonService{
-	//핵심관심모듈
+//핵심관심모듈
+public class HewonServiceImpl implements HewonService {
 	@Setter
 	private HewonDAO hewonDAO;
 	
 	@Override
 	public void addHewon(Hewon Hewon) {
-		// TODO Auto-generated method stub
-		
+		System.out.println("*** HewonServiceImpl 클래스의 addHewon(Hewon Hewon) 메소드 호출 ***");
+		hewonDAO.insertHewon(Hewon);
 	}
 
 	@Override
 	public Hewon getHewon(int num) {
-		// TODO Auto-generated method stub
-		return null;
+		System.out.println("*** HewonServiceImpl 클래스의 getHewon(int num) 메소드 호출 ***");
+		return hewonDAO.selectHewon(num);
 	}
 
 	@Override
 	public List<Hewon> getHewonList() {
-		// TODO Auto-generated method stub
-		return null;
+		System.out.println("*** HewonServiceImpl 클래스의 getHewonList() 메소드 호출 ***");
+		return hewonDAO.selectHewonList();
 	}
 
 }

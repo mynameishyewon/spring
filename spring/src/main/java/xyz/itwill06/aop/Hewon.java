@@ -6,5 +6,4 @@ import lombok.Data;
 public class Hewon {
 	private int num;
 	private String name;
-
 }
