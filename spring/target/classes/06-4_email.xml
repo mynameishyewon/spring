@@ -13,7 +13,7 @@
 		<!-- port 필드 : SMTP 서비스를 제공하는 메일 서버의 포트 번호(Port Number) 저장 -->
 		<property name="port" value="587"/>
 		<!-- username 필드 : SMTP 서비스를 제공하는 메일 서버의 접속 사용자 이름(아이디)을 저장 -->
-		<property name="username" value="11k9x1i4x1d@naver.com"/>
+		<property name="username" value="anotherwon05"/>
 		<!-- password 필드 : SMTP 서비스를 제공하는 메일 서버의 접속 사용자 비밀번호를 저장 -->
 		<!-- => 사용자 비밀번호 대신 앱 비밀번호를 제공받아 필드에 저장 -->
 		<!-- Google의 앱 비밀번호를 제공받는 방법 -->

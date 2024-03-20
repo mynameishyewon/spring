@@ -78,7 +78,6 @@
 		<level value="info"/>
 	</logger>
 	
-	
 	<logger name="xyz.itwill06.aop">
 		<level value="info"/>
 	</logger>
