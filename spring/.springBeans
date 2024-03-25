@@ -19,7 +19,6 @@
 		<config>src/main/resources/06-2_param.xml</config>
 		<config>src/main/resources/06-3_timer.xml</config>
 		<config>src/main/resources/06-4_email.xml</config>
-		<config>src/main/resources/06-5_aopAnnotation.xml</config>
 		<config>src/main/resources/07-dao.xml</config>
 	</configs>
 	<autoconfigs>
