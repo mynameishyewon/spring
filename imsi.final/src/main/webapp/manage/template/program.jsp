@@ -1,102 +1,67 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Form Wizard | Nifty - Responsive admin template.</title>
+<title>OTT 공유 서비스 UI</title>
 
-
-<!--STYLESHEET-->
-<!--=================================================-->
-
-<!--Open Sans Font [ OPTIONAL ] -->
-<link
-	href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin"
-	rel="stylesheet">
-
-
-<!--Bootstrap Stylesheet [ REQUIRED ]-->
+<!-- Bootstrap CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 
-
-<!--Nifty Stylesheet [ REQUIRED ]-->
-<link href="css/nifty.min.css" rel="stylesheet">
-
-
-<!--Font Awesome [ OPTIONAL ]-->
+<!-- Optional: Font Awesome -->
 <link href="plugins/font-awesome/css/font-awesome.min.css"
 	rel="stylesheet">
 
-
-<!--Switchery [ OPTIONAL ]-->
-<link href="plugins/switchery/switchery.min.css" rel="stylesheet">
-
-
-<!--Bootstrap Select [ OPTIONAL ]-->
-<link href="plugins/bootstrap-select/bootstrap-select.min.css"
-	rel="stylesheet">
-
-
-<!--Bootstrap Validator [ OPTIONAL ]-->
-<link href="plugins/bootstrap-validator/bootstrapValidator.min.css"
-	rel="stylesheet">
-
-
-<!--Demo [ DEMONSTRATION ]-->
-<link href="css/demo/nifty-demo.min.css" rel="stylesheet">
-
-
-
-
-<!--SCRIPT-->
-<!--=================================================-->
-
-<!--Page Load Progress Bar [ OPTIONAL ]-->
-<link href="plugins/pace/pace.min.css" rel="stylesheet">
-<script src="plugins/pace/pace.min.js"></script>
-
-<title>Insert title here</title>
+<style>
+/* 추가적인 스타일 */
+</style>
 </head>
 <body>
-	<div class="panel-body bg-primary" style="position: relative; z-index: 2">
-		<div class="row">
-			<div class="col-lg-6">
-				<div class="row">
-					<div class="col-xs-8">
+	<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OTT 공유 서비스 UI</title>
 
-						<!--Server load stat-->
-						<div class="pad-ver media">
-							<div class="media-left">
-								<span class="icon-wrap icon-wrap-xs"> <i
-									class="fa fa-cloud fa-2x"></i>
-								</span>
-							</div>
+<!-- Bootstrap CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
 
-							<div class="media-body">
-								<p class="h3 text-thin media-heading">넷플릭스</p>
-							</div>
-							<div class="media-body">
-								<p class="h3 text-thin media-heading">웨이브</p>
-							</div>
-							<div class="media-body">
-								<p class="h3 text-thin media-heading">티빙</p>
-							</div>
-							<div class="media-body">
-								<p class="h3 text-thin media-heading">디즈니</p>
-							</div>
-							<div class="media-body">
-								<p class="h3 text-thin media-heading">왓챠</p>
-							</div>
-							
-						</div>
-						</div>
-						</div>
+<!-- Optional: Font Awesome -->
+<link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
-					
-					</div>
-				</div>
-			</div>
+<style>
+/* 추가적인 스타일 */
+</style>
+</head>
+<body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OTT 공유 서비스 UI</title>
+
+<!-- Bootstrap CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Optional: Font Awesome -->
+<link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="text-center" style="padding-top: 20px;"> <!-- 상단 패딩 추가 -->
+    <span class="h3 text-thin" style="margin-right: 20px;">넷플릭스</span>
+    <span class="h3 text-thin" style="margin-right: 20px;">웨이브</span>
+    <span class="h3 text-thin" style="margin-right: 20px;">티빙</span>
+    <span class="h3 text-thin" style="margin-right: 20px;">디즈니</span>
+    <span class="h3 text-thin">왓챠</span>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+</body>
+</html>
 </body>
 </html>

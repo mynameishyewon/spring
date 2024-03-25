@@ -1,8 +1,10 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <!-- Meta -->
+
+<<!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,8 +21,8 @@
     <!-- Fonts -->
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" type="text/css">
 </head>
-
 <body>
+	<body>
 
     <div id="loader-wrapper">
         <div id="loader"></div>
@@ -68,23 +70,6 @@
             </div><!-- / navbar-collapse -->
         </div><!-- / container -->
     </nav>
-    
-    
-    <div class="text-center" style="padding-top: 20px;">
-    <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0);" onclick="toggleCategory('netflix-categories')">넷플릭스</a>
-            <ul id="netflix-categories" class="categories" style="display: none;">
-                <li>영화</li>
-                <li>드라마</li>
-                <li>예능</li>
-                <li>티비프로그램</li>
-                <li>다큐</li>
-            </ul>
-        </li>
-        <!-- 여기서부터는 웨이브, 왓챠, 티빙, 디즈니 플러스에 대한 코드를 비슷한 방식으로 추가 -->
-    </ul>
-</div>
 
     <header class="fh p-0 v-center bg-img jarallax" data-jarallax data-speed="0.8" style="background-image: url(assets/images/ph-bg.jpg);">
         <div class="container">
