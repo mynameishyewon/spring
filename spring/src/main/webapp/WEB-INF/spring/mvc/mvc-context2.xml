@@ -2,7 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
-
+ 
 	<!-- spring-webmvc 라이브러리의 InternalResourceViewResolver 클래스를 Spring Bean으로 등록 -->
 	<!-- => InternalResourceViewResolver 객체 : 요청 처리 메소드의 반환값(ViewName)을 전달받아
 	포워드 이동될 JSP 문서의 경로를 생성하는 제공하는 기능 -->

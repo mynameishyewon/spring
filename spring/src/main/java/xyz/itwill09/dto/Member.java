@@ -1,6 +1,6 @@
 package xyz.itwill09.dto;
 
-import lombok.Data;
+import lombok.Data; 
 
 //회원정보를 저장하기 위한 클래스 - VO 클래스 >> DTO 클래스
 // => DAO 클래스에서 정보를 전달할 목적으로 작성된 클래스
