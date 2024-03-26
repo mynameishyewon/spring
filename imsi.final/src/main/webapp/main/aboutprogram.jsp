@@ -21,7 +21,14 @@
     <!-- Fonts -->
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" type="text/css">
 </head>
+<style>
 
+ .nav-link {
+        color: black; /* 글씨 색을 검정색으로 변경 */
+        font-weight: bold; /* 글씨를 진하게 */
+        font-size: 1.5em; /* 기본 글씨 크기보다 조금 크게 */
+    }
+</style>
 <body>
 
     <div id="loader-wrapper">
@@ -42,8 +49,8 @@
                 <span class="sr-only">Toggle navigation</span>
             </button><!-- / navbar-toggler -->
 
-            
-                <div class="text-center" style="padding-top: 20px;"> <!-- 상단 패딩 추가 -->
+            	
+                <div class="text-center" style="padding-top: 20px; margin: 0 auto; "> <!-- 상단 패딩 추가 -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#landings">넷플릭스</a>
@@ -60,7 +67,6 @@
                      <li class="nav-item">
                         <a class="nav-link last-menu-item" href="components.html">디즈니 플러스</a>
                     </li>
-                    
                 </ul><!-- / navbar-nav -->
 
                 <ul class="navbar-button p-0 m-0 ml-30">
@@ -70,24 +76,9 @@
             </div><!-- / navbar-collapse -->
         </div><!-- / container -->
     </nav>
-    
-    
-    <div class="text-center" style="padding-top: 20px;">
-    <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-            <ul id="netflix-categories" class="categories" style="display: none;">
-                <li>영화</li>
-                <li>드라마</li>
-                <li>예능</li>
-                <li>티비프로그램</li>
-                <li>다큐</li>
-            </ul>
-        </li>
-        <!-- 여기서부터는 웨이브, 왓챠, 티빙, 디즈니 플러스에 대한 코드를 비슷한 방식으로 추가 -->
-    </ul>
-</div>
+   
 
-    <header class="fh p-0 v-center bg-img jarallax" data-jarallax data-speed="0.8" style="background-image: url(assets/images/ph-bg.jpg);">
+    <header class="fh p-0 v-center bg-img jarallax" data-jarallax data-speed="0.8" style="background-image: url(assets/images/ott_white.jpg);">
         <div class="container">
             <div class="header-content">
                 <div class="row v-center">
@@ -99,7 +90,7 @@
                         <a href="#features" class="btn btn-primary-light mr-5"><i class="fas fa-cog mr-5"></i> <span>추천작</span></a>
                     </div><!-- / column -->
                     <div class="col-lg-8 text-right">
-                        <img src="assets/images/ph-square.jpg" alt="" class="z-index-2 relative rellax w-80 tablet-lg-hidden" data-rellax-speed="2" data-rellax-percentage="0.5">
+                        <img src="assets/images/ott.jpg" alt="" class="z-index-2 relative rellax w-80 tablet-lg-hidden" data-rellax-speed="2" data-rellax-percentage="0.5">
                     </div><!-- / column -->
                 </div><!-- / row -->
             </div><!-- / header-content -->
@@ -111,19 +102,27 @@
         <section id="landings" class="lg">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-title mb-15" data-aos="fade-down">어떤게 재밌을까?</h2>
+                    <h2 class="section-title mb-15" data-aos="fade-down">뭐가 재밌을까?</h2>
                     <div class="spacer-line border-primary mb-15">&nbsp;</div>
                     <p class="lead w-30 m-x-auto mb-70" data-aos="fade-in" data-aos-delay="100">요즘 인기 많은 프로그램!</p>
                 </div><!-- / text-center -->
+                <div class="sorting">
+    <p>
+       <a href="id="movie">영화</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+       <a href="id="drama">드라마</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+       <a href="id="enter">예능</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+       <a href="id="docu">다큐</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+   </p>
+</div>	
                 <div class="row">
-                	<% for(int i=0; i<=15; i++) { %>
+                	<% for(int i=0; i<=8; i++) { %>
                     <div class="col-md-6 col-lg-4">
                         <a href="program_detail.jsp" class="demo-item-link" target="_blank">
                             <div class="card">
                                 <img class="card-img-top" src="assets/images/tear.jpg" alt="">
                                 <div class="card-body text-center">
-                                    <h4 class="card-title fs-20 mb-5">Demo 1</h4>
-                                    <p class="fs-14 fw-medium text-secondary-dark mb-0">Agency</p>
+                                    <h4 class="card-title fs-20 mb-5">눈물의 여왕</h4>
+                                    <p class="fs-14 fw-medium text-secondary-dark mb-0">클릭하여 리뷰 확인하기!</p>
                                 
                                 </div><!-- / card-body -->
                             </div><!-- / card -->
@@ -131,144 +130,7 @@
                     </div><!-- / column -->
                     <% } %>
                     
-					<%--
-                    <div class="col-md-6 col-lg-4">
-                        <a href="index2.html" class="demo-item-link" target="_blank">
-                            <div class="card">
-                                <img class="card-img-top" src="assets/images/tear.jpg" alt="">
-                                <div class="card-body text-center">
-                                    <h4 class="card-title fs-20 mb-5">Demo 2</h4>
-                                    <p class="fs-14 fw-medium text-secondary-dark mb-0">Photographer</p>
-                                </div><!-- / card-body -->
-                            </div><!-- / card -->
-                        </a><!-- / demo-item-link -->
-                    </div><!-- / column -->
-
-                    <div class="col-md-6 col-lg-4">
-                        <a href="index3.html" class="demo-item-link" target="_blank">
-                            <div class="card">
-                                <img class="card-img-top" src="assets/images/ph.jpg" alt="">
-                                <div class="card-body text-center">
-                                    <h4 class="card-title fs-20 mb-5">Demo 3</h4>
-                                    <p class="fs-14 fw-medium text-secondary-dark mb-0">Personal Portfolio</p>
-                                </div><!-- / card-body -->
-                            </div><!-- / card -->
-                        </a><!-- / demo-item-link -->
-                    </div><!-- / column -->
-
-                    <div class="col-md-6 col-lg-4">
-                        <a href="index4.html" class="demo-item-link" target="_blank">
-                            <div class="card">
-                                <img class="card-img-top" src="assets/images/ph.jpg" alt="">
-                                <div class="card-body text-center">
-                                    <h4 class="card-title fs-20 mb-5">Demo 4</h4>
-                                    <p class="fs-14 fw-medium text-secondary-dark mb-0">Restaurant</p>
-                                </div><!-- / card-body -->
-                            </div><!-- / card -->
-                        </a><!-- / demo-item-link -->
-                    </div><!-- / column -->
-
-                    <div class="col-md-6 col-lg-4">
-                        <a href="index5.html" class="demo-item-link" target="_blank">
-                            <div class="card">
-                                <img class="card-img-top" src="assets/images/ph.jpg" alt="">
-                                <div class="card-body text-center">
-                                    <h4 class="card-title fs-20 mb-5">Demo 5</h4>
-                                    <p class="fs-14 fw-medium text-secondary-dark mb-0">Food Ordering</p>
-                                </div><!-- / card-body -->
-                            </div><!-- / card -->
-                        </a><!-- / demo-item-link -->
-                    </div><!-- / column -->
-
-                    <div class="col-md-6 col-lg-4">
-                        <a href="index6.html" class="demo-item-link" target="_blank">
-                            <div class="card">
-                                <img class="card-img-top" src="assets/images/ph.jpg" alt="">
-                                <div class="card-body text-center">
-                                    <h4 class="card-title fs-20 mb-5">Demo 6</h4>
-                                    <p class="fs-14 fw-medium text-secondary-dark mb-0">App</p>
-                                </div><!-- / card-body -->
-                            </div><!-- / card -->
-                        </a><!-- / demo-item-link -->
-                    </div><!-- / column -->
-
-                    <div class="col-md-6 col-lg-4">
-                        <a href="index7.html" class="demo-item-link" target="_blank">
-                            <div class="card">
-                                <img class="card-img-top" src="assets/images/ph.jpg" alt="">
-                                <div class="card-body text-center">
-                                    <h4 class="card-title fs-20 mb-5">Demo 7</h4>
-                                    <p class="fs-14 fw-medium text-secondary-dark mb-0">Saas</p>
-                                </div><!-- / card-body -->
-                            </div><!-- / card -->
-                        </a><!-- / demo-item-link -->
-                    </div><!-- / column -->
-
-                    <div class="col-md-6 col-lg-4">
-                        <a href="index8.html" class="demo-item-link" target="_blank">
-                            <div class="card">
-                                <img class="card-img-top" src="assets/images/ph.jpg" alt="">
-                                <div class="card-body text-center">
-                                    <h4 class="card-title fs-20 mb-5">Demo 8</h4>
-                                    <p class="fs-14 fw-medium text-secondary-dark mb-0">Events</p>
-                                </div><!-- / card-body -->
-                            </div><!-- / card -->
-                        </a><!-- / demo-item-link -->
-                    </div><!-- / column -->
-
-                    <div class="col-md-6 col-lg-4">
-                        <a href="index9.html" class="demo-item-link" target="_blank">
-                            <div class="card">
-                                <img class="card-img-top" src="assets/images/ph.jpg" alt="">
-                                <div class="card-body text-center">
-                                    <h4 class="card-title fs-20 mb-5">Demo 9</h4>
-                                    <p class="fs-14 fw-medium text-secondary-dark mb-0">Wedding</p>
-                                </div><!-- / card-body -->
-                            </div><!-- / card -->
-                        </a><!-- / demo-item-link -->
-                    </div><!-- / column -->
-
-                    <div class="col-md-6 col-lg-4">
-                        <a href="index10.html" class="demo-item-link" target="_blank">
-                            <div class="card">
-                                <img class="card-img-top" src="assets/images/ph.jpg" alt="">
-                                <div class="card-body text-center">
-                                    <h4 class="card-title fs-20 mb-5">Demo 10</h4>
-                                    <p class="fs-14 fw-medium text-secondary-dark mb-0">Travel</p>
-                                </div><!-- / card-body -->
-                            </div><!-- / card -->
-                        </a><!-- / demo-item-link -->
-                    </div><!-- / column -->
-
-                    <div class="col-md-6 col-lg-4">
-                        <a href="index11.html" class="demo-item-link" target="_blank">
-                            <div class="card">
-                                <img class="card-img-top" src="assets/images/ph.jpg" alt="">
-                                <div class="card-body text-center">
-                                    <h4 class="card-title fs-20 mb-5">Demo 11</h4>
-                                    <p class="fs-14 fw-medium text-secondary-dark mb-0">Fitness</p>
-                                </div><!-- / card-body -->
-                            </div><!-- / card -->
-                        </a><!-- / demo-item-link -->
-                    </div><!-- / column -->
-
-                    <div class="col-md-6 col-lg-4">
-                        <a href="index12.html" class="demo-item-link" target="_blank">
-                            <div class="card">
-                                <img class="card-img-top" src="assets/images/ph.jpg" alt="">
-                                <div class="card-body text-center">
-                                    <h4 class="card-title fs-20 mb-5">Demo 12</h4>
-                                    <p class="fs-14 fw-medium text-secondary-dark mb-0">Product</p>
-                                </div><!-- / card-body -->
-                            </div><!-- / card -->
-                        </a><!-- / demo-item-link -->
-                    </div><!-- / column -->
-                     --%>
-                </div><!-- / row -->
-            </div><!-- / container -->
-        </section><!-- / landings -->
-
-        
+				
 
         <section id="features" class="lg">
             <div class="container">

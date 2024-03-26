@@ -116,29 +116,48 @@ li a:hover {
 <link rel="stylesheet" href="assets/css/fontawesome-all.min.css"
 	type="text/css">
 </head>
+ <style>
+        .navbar-nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f0f0f0; /* 네비게이션 바의 배경색 */
+            text-align: center;
+        }
 
+        .nav-item {
+            display: inline; /* 가로로 배치 */
+            margin-right: 10px; /* 오른쪽 여백 추가 */
+        }
+
+        .nav-link {
+            display: inline-block;
+            color: black; /* 글씨 색을 검정색으로 변경 */
+            font-weight: bold; /* 글씨를 진하게 */
+            font-size: 1.5em; /* 기본 글씨 크기보다 조금 크게 */
+            margin-right: 10px;
+        }
+
+        .nav-link:hover {
+            background-color: #ddd; /* 마우스 오버 시 배경색 변경 */
+        }
+    </style>
+</head>
 <body data-bs-spy="scroll" data-bs-target="#nav-scroll">
-
-	<div id="loader-wrapper">
-		<div id="loader"></div>
-		<div class="loader-section section-left"></div>
-		<div class="loader-section section-right"></div>
-	</div>
-
-	<div id="home"></div>
-
-	<div class="menu">
-    <nav class="clearfix">
-        <ul class="clearfix">
-            <li><a href="http://www._____.com">넷플릭스</a></li>
-            <li><a href="http://www._____.com/About">웨이브</a></li>
-            <li><a href="http://www._____.com/Project">왓챠</a></li>
-            <li><a href="http://www._____.com/Travel">티빙</a></li>
-            <li><a href="http://www._____.com/Contact">디즈니플러스</a></li>
+    <div class="text-center" style="margin: 0 auto; padding-top: 20px;"> <!-- 상단 패딩 추가 -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#landings">넷플릭스</a>&nbsp;&nbsp;
+                <a class="nav-link" href="#pages">웨이브</a>&nbsp;&nbsp;
+                <a class="nav-link" href="#features">왓챠</a>&nbsp;&nbsp;
+                <a class="nav-link last-menu-item" href="components.html">티빙</a>&nbsp;&nbsp;
+                <a class="nav-link last-menu-item" href="components.html">디즈니 플러스</a>
+            </li>
         </ul>
-        <a id="pull" href="#"></a>
-    </nav>
-</div>
+    </div>
+
+                
 
 <header class="fh p-0 v-center bg-white">
     <div class="container">
@@ -181,6 +200,7 @@ li a:hover {
 <!-- / text-center -->
 
 <div class="row">
+		<% for(int i=0; i<=5; i++) { %>
 	<div class="col-lg-4">
 		<div class="card raised" data-aos="fade-up">
 			<div class="card-body text-center">
@@ -192,8 +212,9 @@ li a:hover {
 			</div>
 		</div>
 	</div>
-	<!-- / column -->
+	<% } %>
 
+	<%-- 
 	<div class="col-lg-4">
 		<div class="card raised" data-aos="fade-up">
 			<div class="card-body text-center">
@@ -225,6 +246,8 @@ li a:hover {
 <!-- / container -->
 </section>
 <!-- / about-us -->
+
+--%>
 <%-- 
 <section id="services" class="lg bg-white">
 	<div class="container">
@@ -600,8 +623,8 @@ li a:hover {
 	<div class="container">
 		<div class="row v-center">
 			<div class="col-lg-6 tablet-lg-top-45">
-				<h2 class="mb-5">당신도 리뷰를 남겨보세요!</h2>
-				<p class="lead mb-20">리뷰리뷰</p>
+				<h2 class="mb-5">작품에 대한 리뷰를 남겨주세요!</h2>
+				<p class="lead mb-20">리뷰는 위티들에게 도움이 됩니다.</p>
 				<div class="accordion minimal-accordion"
 					id="minimal-accordionExample" data-aos="fade-up"
 					data-aos-delay="100">
@@ -610,7 +633,7 @@ li a:hover {
 							<button class="accordion-button" type="button"
 								data-bs-toggle="collapse" data-bs-target="#minimal-collapseOne"
 								aria-expanded="true" aria-controls="minimal-collapseOne">
-								How to install? <span><i class="fas fa-chevron-down"></i></span>
+								리뷰는 어떻게 선정되나요? <span><i class="fas fa-chevron-down"></i></span>
 							</button>
 						</h2>
 						<!-- / accordion-header -->
@@ -618,9 +641,7 @@ li a:hover {
 							class="accordion-collapse collapse show"
 							aria-labelledby="minimal-headingOne"
 							data-bs-parent="#minimal-accordionExample">
-							<div class="accordion-body">Vivamus urna sapien, bibendum
-								vitae diam vitae, egestas cursus erat fermentum lacus quis
-								bibendum auctor.</div>
+							<div class="accordion-body">잘쓰는 사람들은 포인트 지급 예정입니다.</div>
 							<!-- / accordion-body -->
 						</div>
 						<!-- / collapse -->
@@ -632,45 +653,22 @@ li a:hover {
 							<button class="accordion-button collapsed" type="button"
 								data-bs-toggle="collapse" data-bs-target="#minimal-collapseTwo"
 								aria-expanded="false" aria-controls="minimal-collapseTwo">
-								How to customize? <span><i class="fas fa-chevron-down"></i></span>
+								리뷰는 어떻게 작성해야하나요? <span><i class="fas fa-chevron-down"></i></span>
 							</button>
 						</h2>
 						<!-- / accordion-header -->
 						<div id="minimal-collapseTwo" class="accordion-collapse collapse"
 							aria-labelledby="minimal-headingTwo"
 							data-bs-parent="#minimal-accordionExample">
-							<div class="accordion-body">Vivamus urna sapien, bibendum
-								vitae diam vitae, egestas cursus erat fermentum lacus quis
-								bibendum auctor.</div>
+							<div class="accordion-body">
+								감명깊었던 내용을 작성해</div>
 							<!-- / accordion-body -->
 						</div>
 						<!-- / collapse -->
 					</div>
 					<!-- / accordion-item -->
 
-					<div class="accordion-item">
-						<h2 class="accordion-header" id="minimal-headingThree">
-							<button class="accordion-button collapsed" type="button"
-								data-bs-toggle="collapse"
-								data-bs-target="#minimal-collapseThree" aria-expanded="false"
-								aria-controls="minimal-collapseThree">
-								 <span><i
-									class="fas fa-chevron-down"></i></span>
-							</button>
-						</h2>
-						<!-- / accordion-header -->
-						<div id="minimal-collapseThree"
-							class="accordion-collapse collapse"
-							aria-labelledby="minimal-headingThree"
-							data-bs-parent="#minimal-accordionExample">
-							<div class="accordion-body">Vivamus urna sapien, bibendum
-								vitae diam vitae, egestas cursus erat fermentum lacus quis
-								bibendum auctor.</div>
-							<!-- / accordion-body -->
-						</div>
-						<!-- / collapse -->
-					</div>
-					<!-- / accordion-item -->
+					
 				</div>
 				<!-- / accordion -->
 			</div>
@@ -683,9 +681,7 @@ li a:hover {
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
-									<input type="text" class="form-control" id="contact-name5"
-										name="inputName5" placeholder="&#xf2bd; Full Name" required=""
-										style="font-family: 'Font Awesome 5 Free', sans-serif !important; font-weight: 400">
+									<p>평점 5개 만점!</p>
 								</div>
 								<!-- / form-group -->
 							</div>
@@ -693,20 +689,14 @@ li a:hover {
 
 							<div class="col-md-6">
 								<div class="form-group">
-									<input type="email" class="form-control" id="contact-email5"
-										name="inputEmail5" placeholder="&#xf0e0; Email" required=""
-										style="font-family: 'Font Awesome 5 Free', sans-serif !important; font-weight: 400">
+									<p>★★★★★</p>
 								</div>
 								<!-- / form-group -->
 							</div>
 							<!-- / column -->
 
 							<div class="col-md-12">
-								<div class="form-group">
-									<input type="text" class="form-control" id="contact-subject5"
-										name="inputSubject5" placeholder="&#xf059; Subject"
-										style="font-family: 'Font Awesome 5 Free', sans-serif !important; font-weight: 400">
-								</div>
+								<p>위티만의 두줄리뷰를 남겨보세요!</p>
 								<!-- / form-group -->
 							</div>
 							<!-- / column -->
@@ -718,8 +708,7 @@ li a:hover {
 								required=""
 								style="font-family: 'Font Awesome 5 Free', sans-serif !important; font-weight: 400; min-height: 115px; max-height: 150px;"></textarea>
 						</div>
-						<button type="submit" class="btn btn-primary btn-submit">Send
-							Message</button>
+						<button type="submit" class="btn btn-primary btn-submit">리뷰등록</button>
 					</form>
 					<!-- / form-group -->
 				</div>
