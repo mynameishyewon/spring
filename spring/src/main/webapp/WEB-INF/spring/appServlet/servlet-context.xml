@@ -32,9 +32,49 @@
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<beans:property name="prefix" value="/WEB-INF/views/" />
+		<!-- defaultEncoding 필드에 Properties 파일의 문자형태(케릭터셋)을 저장되도록 값 주입 -->
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
 	<!-- <context:component-scan base-package="xyz.itwill.spring" /> -->
 	<context:component-scan base-package="xyz.itwill09.controller" />
+	
+	<!-- 메세지 관리 기능을 제공하는 클래스 (ReloadableResourceBundleMessageSource)를 Spring Bean으로 등록 -->
+	<!--  => Spring Bean의 식별자(beanName)을 반드시 [messageSource]로 설정 -->
+	<beans:bean class="org.springframework.context.support.ReloadableResourceBundleMessageSource" id="messageSource">
+		<!-- basenames 필드에는 List 객체를 생성하여 저장되도록 의존성 주입 -->
+		<!-- =>List 객체의 요소에는 메세지가 저장된 Properties 파일의 경로를 저장 -->
+		<!-- => Properties 파일은  -->
+		<beans:property name="basenames">
+			<beans:list>
+			<!--  	<beans:value>WEB-INF/message/label</beans:value>-->
+				<beans:value>classpath:message/label</beans:value>
+
+				<beans:value>WEB-INF/message/error</beans:value>
+			</beans:list>
+		</beans:property>
+		
+		<!-- cacheSeconds 파일을 읽어 메모리에 저장되기 위한 시간(초)이 저장되도록 값 주입 -->
+		<beans:property name="cacheSeconds" value="60"/>
+		<beans:property name="defaultEncoding" value="utf-8"/>
+	</beans:bean>
+	
+	<!-- 세션 속성값으롤 저장된 Locale 객체를 사용해 메세지를 제공하는 클래스를 Spring Bean으로 등록 -->
+	<beans:bean class="org.springframework.web.servlet.i18n.SessionLocaleResolver" id="localeResolver">
+		<!-- defaultLocale필드에 기본적으로 사용될 언어를 저장되도록 값 주입 -->
+		<beans:property name="defaultLocale" value="ko"></beans:property>
+	</beans:bean>
 </beans:beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
