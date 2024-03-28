@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Fonts -->
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
 </head>
 <style>
 
@@ -44,8 +46,43 @@
 
 .container {
 	background-color: #gray;
+}
+#searchBtn {
+	width: 5px;
+	height: 5px;
+}
+@media (max-width: 768px) { /* 필요에 따라 max-width 조정 */
+    .navbar-nav.ml-auto {
+        flex-direction: row !important; /* 항목들을 가로로 유지 */
+        background-color: transparent !important; /* 원하는 색상으로 설정 */
+    }
+    .navbar-nav .nav-item {
+        display: inline-block; /* 항목들을 인라인으로 표시 */
+    }
+.search-container {
+    display: flex; /* 플렉스박스 컨테이너로 지정 */
+    justify-content: center; /* 항목들을 가운데 정렬 */
+    align-items: center; /* 항목들을 수직 방향으로 가운데 정렬 */
+    width: 100%; /* 컨테이너 너비를 100%로 설정 */
+    max-width: 600px; /* 최대 너비 설정 */
+    margin: 0 auto; /* 컨테이너를 페이지 중앙에 위치시킴 */
+}
+
+.searchBar {
+    flex-grow: 1; /* 입력 필드가 남은 공간을 모두 차지하도록 설정 */
+    margin-right: 10px; /* 버튼과의 간격 */
+}
+
+button {
+    flex-shrink: 0; /* 버튼 크기가 줄어들지 않도록 설정 */
+}
+/* 슬라이드 컨테이너의 높이 조정 */
+.carousel-inner {
+    height: 200px; /* 원하는 높이로 설정 */
+}
 
 }
+
 </style>
 <body>
     <div id="loader-wrapper">
@@ -59,8 +96,22 @@
     
    
     
-
-    <header class="fh p-0 v-center bg-img jarallax" data-jarallax data-speed="0.8" style="background-image: url(assets/images/ott_white.jpg);">
+    
+    
+    <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#imageCarousel" data-slide-to="1"></li>
+    <li data-target="#imageCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="assets/images/white.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="assets/images/ott_white.jpg" alt="Second slide">
+    </div>
+    <header class="fh p-0 v-center bg-im g jarallax" data-jarallax data-speed="0.8" style="background-image: url();">
         <div class="container">
         <nav id="ottBar" class="navbar navbar-expand-lg navbar-light mobile-white-nav absolute top-0 left-0 right-0">
         <div class="container"  >
@@ -89,14 +140,16 @@
                 </ul><!-- / navbar-button --
             </div><!-- / navbar-collapse -->
         </div><!-- / container -->
+    	
     </nav>
+    
+    
             <div class="header-content">
                 <div class="row v-center">
                     <div class="col-lg-4 z-index-1 tablet-lg-top-45">
-                        <h6 class="fs-18 text-primary">어떤 걸 볼까?</h6>
+                        <h6 class="fs-18 text-primary" style="font-size: 5em;">어떤 걸 볼까?</h6>
                         <h2 class="page-title mb-20">둘러보기</h2>
                         <p class="header-text fw-regular fs-18">무엇을 봐야할지 망설여지신다구요? <br>지금'위티'들의 리뷰를 확인하세요!!</p>
-                        <a href="#landings" class="btn btn-primary mr-5"><i class="fas fa-window-restore mr-5"></i> <span>파티참여</span></a>
                         <a href="#features" class="btn btn-primary-light mr-5"><i class="fas fa-cog mr-5"></i> <span>요금표 보기</span></a>
                     </div><!-- / column -->
                     <div class="col-lg-8 text-right">
@@ -106,6 +159,18 @@
             </div><!-- / header-content -->
         </div><!-- / container -->
     </header>
+    
+  </div>
+  <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+    
 
 	
 
@@ -116,17 +181,16 @@
                     <div class="spacer-line border-primary mb-15">&nbsp;</div>
                 <div class="text-center" id="middleBar">
                     <h2 class="section-title mb-15" data-aos="fade-down">인기 있는 방송 한눈에 보기!</h2>
-                    <div>
-                    <p class="lead w-30 m-x-auto mb-70" data-aos="fade-in" data-aos-delay="100">
-                    <input type="text" class="searchBar" placeholder="프로그램 검색" ><button>검색</button>
-                    </p>
-                    </div>
-                </div><!-- / text-center -->
+                    <div class="search-container" data-aos="fade-in" data-aos-delay="100">
+    <input type="text" class="searchBar" placeholder="프로그램 검색">
+    <button type="button">검색</button>
+
+
+</div>
+</div>
               
                 <div class="proType">
    	
-  
-  
     <p>
     	
        <a href="id="allpro">전체</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
@@ -155,144 +219,22 @@
                     </div>
                     </section>
                    
-                    
-				
-
-        <section id="features" class="lg">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-title mb-15" data-aos="fade-down">FEATURES</h2>
-                    <div class="spacer-line border-primary mb-15">&nbsp;</div>
-                    <p class="lead w-30 m-x-auto mb-70" data-aos="fade-in" data-aos-delay="100">Cross-browser, Responsive, Multipurpose, Parallax Backgrounds and more</p>
-                </div><!-- / text-center -->
-                <div class="row">
-                    <div class="col-md-6 col-xl-4 col-line col-line-bottom tablet-xl-no-border">
-                        <div class="p-y-40 p-x-30 promo-center" data-aos="fade-up" data-aos-delay="100">
-                            <div class="promo-big promo-icon-bg circle bg-primary-light b-0 mb-20">
-                                <i class="fas fa-laptop promo-icon text-primary"></i>
-                            </div><!-- / promo-big -->
-                            <h6 class="box-title mb-15">Responsive</h6>
-                            <p class="box-description">Mobile-first approach, it looks and works perfectly on any device.</p>
-                        </div><!-- / promo-center -->
-                    </div><!-- / column -->
-
-                    <div class="col-md-6 col-xl-4 col-line col-line-bottom tablet-xl-no-border">
-                        <div class="p-y-40 p-x-30 promo-center" data-aos="fade-up" data-aos-delay="200">
-                            <div class="promo-big promo-icon-bg circle bg-primary-light b-0 mb-20">
-                                <i class="fab fa-sass promo-icon text-primary"></i>
-                            </div><!-- / promo-big -->
-                            <h6 class="box-title mb-15">Easy to Customize</h6>
-                            <p class="box-description">Sass files are included for fast and easy styling &amp; customizations.</p>
-                        </div><!-- / promo-center -->
-                    </div><!-- / column -->
-
-                    <div class="col-md-6 col-xl-4 col-line col-line-bottom br-0 tablet-xl-no-border">
-                        <div class="p-y-40 p-x-30 promo-center" data-aos="fade-up" data-aos-delay="300">
-                            <div class="promo-big promo-icon-bg circle bg-primary-light b-0 mb-20">
-                                <i class="fab fa-bootstrap promo-icon text-primary"></i>
-                            </div><!-- / promo-big -->
-                            <h6 class="box-title mb-15">Bootstrap 5</h6>
-                            <p class="box-description">Built with Bootstrap 5, using Vanilla JS plugins, no jQuery dependencies.</p>
-                        </div><!-- / promo-center -->
-                    </div><!-- / column -->
-
-                    <div class="col-md-6 col-xl-4 col-line tablet-xl-no-border">
-                        <div class="p-y-40 p-x-30 promo-center" data-aos="fade-up" data-aos-delay="400">
-                            <div class="promo-big promo-icon-bg circle bg-primary-light b-0 mb-20">
-                                <i class="fas fa-code promo-icon text-primary"></i>
-                            </div><!-- / promo-big -->
-                            <h6 class="box-title mb-15">Valid Code</h6>
-                            <p class="box-description">100% Valid HTML &amp; Bootstrap code. Tested with W3C Validator.</p>
-                        </div><!-- / promo-center -->
-                    </div><!-- / column -->
-
-                    <div class="col-md-6 col-xl-4 col-line tablet-xl-no-border">
-                        <div class="p-y-40 p-x-30 promo-center" data-aos="fade-up" data-aos-delay="500">
-                            <div class="promo-big promo-icon-bg circle bg-primary-light b-0 mb-20">
-                                <i class="fab fa-js promo-icon text-primary"></i>
-                            </div><!-- / promo-big -->
-                            <h6 class="box-title mb-15">Vanilla JS</h6>
-                            <p class="box-description">Built with just Vanilla JS, using Bootstrap v5, no jQuery dependencies.</p>
-                        </div><!-- / promo-center -->
-                    </div><!-- / column -->
-
-                    <div class="col-md-6 col-xl-4 col-line tablet-xl-no-border">
-                       <div class="p-y-40 p-x-30 promo-center" data-aos="fade-up" data-aos-delay="600">
-                            <div class="promo-big promo-icon-bg circle bg-primary-light b-0 mb-20">
-                                <i class="far fa-file-alt promo-icon text-primary"></i>
-                            </div><!-- / promo-big -->
-                            <h6 class="box-title mb-15">Well Documented</h6>
-                            <p class="box-description">Well commented code &amp; the download package includes Documentation.</p>
-                        </div><!-- / promo-center -->
-                    </div><!-- / column -->
-                </div><!-- / row -->
-
-                <div class="spacer-2x">&nbsp;</div>
-
-                <div class="row v-center">
-                    <div class="col-lg-7 tablet-lg-top-30">
-                        <img src="assets/images/ph.jpg" alt="" class="rounded rellax" data-rellax-speed="1" data-rellax-percentage="0.5">
-                    </div><!-- / column -->
-                    <div class="col-lg-5">
-                        <div class="promo-box promo-left raised mb-45" data-aos="fade-in">
-                            <div class="promo-container">
-                                <i class="fas fa-globe promo-icon d-block mb-25 text-primary"></i>
-                                <h6 class="box-title mb-15">Cross-browser Compatible</h6>
-                                <p class="box-description">Looks and works great on all modern devices across all modern web browsers. Valid HTML.</p>
-                            </div><!-- / promo-container -->
-                        </div><!-- / promo-box -->
-
-                        <div class="promo-box promo-left raised mb-45" data-aos="fade-in" data-aos-delay="100">
-                            <div class="promo-container">
-                                <i class="fas fa-pencil-ruler promo-icon d-block mb-25 text-primary"></i>
-                                <h6 class="box-title mb-15">Multipurpose</h6>
-                                <p class="box-description">12 Prebuilt Landing Pages for different types of business, like Agency, Restaurant, App and more.</p>
-                            </div><!-- / promo-container -->
-                        </div><!-- / promo-box -->
-                    </div><!-- / column -->
-                </div><!-- / row -->
-
-                <div class="spacer-2x">&nbsp;</div>
-
-                <div class="row v-center">
-                    <div class="col-lg-5 tablet-lg-top-30">
-                        <div class="promo-box promo-left raised mb-45" data-aos="fade-in">
-                            <div class="promo-container">
-                                <i class="far fa-window-maximize promo-icon d-block mb-25 text-primary"></i>
-                                <h6 class="box-title mb-15">Parallax Backgrounds</h6>
-                                <p class="box-description">Using the Jarallax JavaScript plugin we can achieve smooth-scrolling parallax background-images and background-videos.</p>
-                            </div><!-- / promo-container -->
-                        </div><!-- / promo-box -->
-
-                        <div class="promo-box promo-left raised mb-45" data-aos="fade-in" data-aos-delay="100">
-                            <div class="promo-container">
-                                <i class="fas fa-window-restore promo-icon d-block mb-25 text-primary"></i>
-                                <h6 class="box-title mb-15">Parallax Scrolling</h6>
-                                <p class="box-description">Using the Rellax JavaScript plugin we can achieve smooth parallax ( aka. float ) scrolling elements at different directions and speed.</p>
-                            </div><!-- / promo-container -->
-                        </div><!-- / promo-box -->
-                    </div><!-- / column -->
-
-                    <div class="col-lg-7">
-                        <img src="assets/images/ph.jpg" alt="" class="rounded rellax" data-rellax-speed="2" data-rellax-percentage="0.5">
-                    </div><!-- / column -->
-                </div><!-- / row -->
-            </div><!-- / container -->
-        </section><!-- / features -->
 
         <section id="cta" class="bg-light lg">
             <div class="container">
                 <div class="cta p-0">
                     <div class="row v-center">
                         <div class="col-lg-8 left-area left-aligned tablet-center">
-                            <h4 class="mb-0">More Demos Coming Soon!</h4>
+                            <h4 class="mb-0" >지금 당장 위티에 참여해보실래요?</h4>
                         </div><!-- / column -->
                     </div><!-- / row -->
                 </div><!-- / cta -->
             </div><!-- / container -->
         </section><!-- / cta -->
     </div><!-- / main-container -->
+    
 
+	<%--
     <footer class="bg-light-grey-dark">
         <div class="container">
             <div class="row v-center mobile-center">
@@ -305,6 +247,7 @@
             </div><!-- / row -->
         </div><!-- / container -->
     </footer>
+     --%>	
 
     <button type="button" id="back-top" class="btn btn-icon btn-circle btn-primary btn-floating raised-sm">
         <i class="fas fa-chevron-up"></i>
@@ -337,6 +280,10 @@
         var rellax = new Rellax('.rellax');
     </script>
     <!-- / Rellax -->
-
+	<!-- css 동적페이지를 위한 코드 -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	
 </body>
 </html>

@@ -142,6 +142,12 @@ li a:hover {
         .nav-link:hover {
             background-color: #ddd; /* 마우스 오버 시 배경색 변경 */
         }
+        .header-content {
+    display: flex;
+    justify-content: center; /* 가로 방향 중앙 정렬 */
+    align-items: center; /* 세로 방향 중앙 정렬 */
+    height: 100vh; /* 높이를 화면 높이와 동일하게 설정 */
+}
     </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#nav-scroll">
@@ -204,419 +210,48 @@ li a:hover {
 	<div class="col-lg-4">
 		<div class="card raised" data-aos="fade-up">
 			<div class="card-body text-center">
-				<img class="mb-30 circle" style="max-width: 150px"
-					src="assets/images/person.jpg" alt="">
-				<p class="mb-5 fw-medium fs-14 lsp-2x">아이디</p>
-				<h6 class="card-title mb-20">★★★★</h6>
-				<h7>너무 재밌고 슬퍼서 놀랐다</h7>
+				<p class="mb-5 fw-medium fs-14 lsp-2x">2020-01-01</p>
+				<p class="card-text mb-15">너무 재밌다 내밥친구.구구구구구절절절절구국ㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱ</p>
+				<
+                      <p class="mb-0 fs-12 fw-regular">닉네임</p>             
 			</div>
 		</div>
 	</div>
 	<% } %>
 
-	<%-- 
-	<div class="col-lg-4">
-		<div class="card raised" data-aos="fade-up">
-			<div class="card-body text-center">
-				<img class="mb-30 circle" style="max-width: 150px"
-					src="assets/images/person.jpg" alt="">
-				<p class="mb-5 fw-medium fs-14 lsp-2x">아이디</p>
-				<h6 class="card-title mb-20">★★★★</h6>
-				<h7>너무 재밌고 슬퍼서 놀랐다</h7>
-			</div>
-		</div>
-	</div>
 	
-
-	<div class="col-lg-4">
-		<div class="card raised" data-aos="fade-up">
-			<div class="card-body text-center">
-				<img class="mb-30 circle" style="max-width: 150px"
-					src="assets/images/person.jpg" alt="">
-				<p class="mb-5 fw-medium fs-14 lsp-2x">아이디</p>
-				<h6 class="card-title mb-20">★★★★</h6>
-				<h7>너무 재밌고 슬퍼서 놀랐다</h7>
-			</div>
-		</div>
-	</div>
-	
-</div>
-<!-- / row -->
-</div>
-<!-- / container -->
-</section>
-<!-- / about-us -->
-
---%>
-<%-- 
-<section id="services" class="lg bg-white">
-	<div class="container">
-		<div class="text-center">
-			<h2 class="section-title mb-15" data-aos="fade-down">SERVICES</h2>
-			<div class="spacer-line border-primary mb-80">&nbsp;</div>
-		</div>
-		<!-- / text-center -->
-		<div class="row">
-			<div
-				class="col-md-6 col-xl-4 col-line col-line-bottom tablet-xl-no-border">
-				<div class="p-y-50 p-x-30 promo-center" data-aos="fade-up"
-					data-aos-delay="100">
-					<div
-						class="promo-big promo-icon-bg circle b-2 border-primary mb-20">
-						<i class="fas fa-laptop promo-icon text-primary"></i>
-					</div>
-					<!-- / promo-big -->
-					<h6 class="box-title mb-15">Web Design</h6>
-					<p class="box-description">Quisque ultricies quam in sapien
-						molestie ornare. Pellentesque gravida ut justo a interdum.</p>
-				</div>
-				<!-- / promo-center -->
-			</div>
-			<!-- / column -->
-
-			<div
-				class="col-md-6 col-xl-4 col-line col-line-bottom tablet-xl-no-border">
-				<div class="p-y-50 p-x-30 promo-center" data-aos="fade-up"
-					data-aos-delay="200">
-					<div
-						class="promo-big promo-icon-bg circle b-2 border-primary mb-20">
-						<i class="fas fa-code promo-icon text-primary"></i>
-					</div>
-					<!-- / promo-big -->
-					<h6 class="box-title mb-15">Web Development</h6>
-					<p class="box-description">Quisque ultricies quam in sapien
-						molestie ornare. Pellentesque gravida ut justo a interdum.</p>
-				</div>
-				<!-- / promo-center -->
-			</div>
-			<!-- / column -->
-
-			<div
-				class="col-md-6 col-xl-4 col-line col-line-bottom br-0 tablet-xl-no-border">
-				<div class="p-y-50 p-x-30 promo-center" data-aos="fade-up"
-					data-aos-delay="300">
-					<div
-						class="promo-big promo-icon-bg circle b-2 border-primary mb-20">
-						<i class="fas fa-bullhorn promo-icon text-primary"></i>
-					</div>
-					<!-- / promo-big -->
-					<h6 class="box-title mb-15">Marketing</h6>
-					<p class="box-description">Quisque ultricies quam in sapien
-						molestie ornare. Pellentesque gravida ut justo a interdum.</p>
-				</div>
-				<!-- / promo-center -->
-			</div>
-			<!-- / column -->
-
-			<div class="col-md-6 col-xl-4 col-line tablet-xl-no-border">
-				<div class="p-y-50 p-x-30 promo-center" data-aos="fade-up"
-					data-aos-delay="400">
-					<div
-						class="promo-big promo-icon-bg circle b-2 border-primary mb-20">
-						<i class="fas fa-share-alt promo-icon text-primary"></i>
-					</div>
-					<!-- / promo-big -->
-					<h6 class="box-title mb-15">Social Media</h6>
-					<p class="box-description">Quisque ultricies quam in sapien
-						molestie ornare. Pellentesque gravida ut justo a interdum..</p>
-				</div>
-				<!-- / promo-center -->
-			</div>
-			<!-- / column -->
-
-			<div class="col-md-6 col-xl-4 col-line tablet-xl-no-border">
-				<div class="p-y-50 p-x-30 promo-center" data-aos="fade-up"
-					data-aos-delay="500">
-					<div
-						class="promo-big promo-icon-bg circle b-2 border-primary mb-20">
-						<i class="fas fa-pencil-ruler promo-icon text-primary"></i>
-					</div>
-					<!-- / promo-big -->
-					<h6 class="box-title mb-15">Graphic Design</h6>
-					<p class="box-description">Quisque ultricies quam in sapien
-						molestie ornare. Pellentesque gravida ut justo a interdum.</p>
-				</div>
-				<!-- / promo-center -->
-			</div>
-			<!-- / column -->
-
-			<div class="col-md-6 col-xl-4 col-line tablet-xl-no-border">
-				<div class="p-y-50 p-x-30 promo-center" data-aos="fade-up"
-					data-aos-delay="600">
-					<div
-						class="promo-big promo-icon-bg circle b-2 border-primary mb-20">
-						<i class="fas fa-globe promo-icon text-primary"></i>
-					</div>
-					<!-- / promo-big -->
-					<h6 class="box-title mb-15">SEO</h6>
-					<p class="box-description">Quisque ultricies quam in sapien
-						molestie ornare. Pellentesque gravida ut justo a interdum.</p>
-				</div>
-				<!-- / promo-center -->
-			</div>
-			<!-- / column -->
-		</div>
-		<!-- / row -->
-	</div>
-	<!-- / container -->
-</section>
-<!-- / services -->
---%>
-
-<%--
-<section id="works" class="lg">
-	<div class="container">
-		<div
-			class="button-group filters-button-group bordered-filter text-center">
-			<button class="btn filter-btn is-checked" data-filter="*">All</button>
-			<button class="btn filter-btn" data-filter=".design">Design</button>
-			<button class="btn filter-btn" data-filter=".web-design">Web
-				Design</button>
-			<button class="btn filter-btn" data-filter=".branding">Branding</button>
-		</div>
-		<!-- /  filters-button-group -->
-
-		<div class="row grid" data-isotope='{ "layoutMode": "masonry" }'>
-			<div class="col-md-6 col-lg-4 grid-item web-design">
-				<a href="assets/images/ph.jpg" class="project project-details"
-					data-glightbox="title: Project One; description: Mauris ultricies nisi ut dui interdum, ut vehicula felis molestie. Vestibulum ornare ante enim, vel elementum ex venenatis vitae. Sed eu auctor est, eget venenatis nibh interdum...">
-					<figure class="portfolio-item">
-						<div class="hovereffect">
-							<img class="img-responsive" src="assets/images/ph.jpg" alt="">
-							<div class="overlay">
-								<div class="hovereffect-title">
-									<div class="hover-bottom">
-										<h6 class="project-title">Project One</h6>
-										<p class="project-skill">Web Design</p>
-									</div>
-									<!-- / hover-bottom -->
-								</div>
-								<!-- / hovereffect-title -->
-							</div>
-							<!-- / overlay -->
-						</div>
-						<!-- / hovereffect -->
-					</figure>
-					<!-- / portfolio-item -->
-				</a>
-				<!-- / project -->
-			</div>
-			<!-- / column -->
-
-			<div class="col-md-6 col-lg-4 grid-item design branding">
-				<a href="assets/images/ph.jpg" class="project project-details"
-					data-glightbox="title: Project Two; description: Mauris ultricies nisi ut dui interdum, ut vehicula felis molestie. Vestibulum ornare ante enim, vel elementum ex venenatis vitae. Sed eu auctor est, eget venenatis nibh interdum...">
-					<figure class="portfolio-item">
-						<div class="hovereffect">
-							<img class="img-responsive" src="assets/images/ph.jpg" alt="">
-							<div class="overlay">
-								<div class="hovereffect-title">
-									<div class="hover-bottom">
-										<h6 class="project-title">Project Two</h6>
-										<p class="project-skill">Design, Branding</p>
-									</div>
-									<!-- / hover-bottom -->
-								</div>
-								<!-- / hovereffect-title -->
-							</div>
-							<!-- / overlay -->
-						</div>
-						<!-- / hovereffect -->
-					</figure>
-					<!-- / portfolio-item -->
-				</a>
-				<!-- / project -->
-			</div>
-			<!-- / column -->
-
-			<div class="col-md-6 col-lg-4 grid-item branding">
-				<a href="assets/images/ph.jpg" class="project project-details"
-					data-glightbox="title: Project Three; description: Mauris ultricies nisi ut dui interdum, ut vehicula felis molestie. Vestibulum ornare ante enim, vel elementum ex venenatis vitae. Sed eu auctor est, eget venenatis nibh interdum...">
-					<figure class="portfolio-item">
-						<div class="hovereffect">
-							<img class="img-responsive" src="assets/images/ph.jpg" alt="">
-							<div class="overlay">
-								<div class="hovereffect-title">
-									<div class="hover-bottom">
-										<h6 class="project-title">Project Three</h6>
-										<p class="project-skill">Branding</p>
-									</div>
-									<!-- / hover-bottom -->
-								</div>
-								<!-- / hovereffect-title -->
-							</div>
-							<!-- / overlay -->
-						</div>
-						<!-- / hovereffect -->
-					</figure>
-					<!-- / portfolio-item -->
-				</a>
-				<!-- / project -->
-			</div>
-			<!-- / column -->
-
-			<div class="col-md-6 col-lg-4 grid-item web-design branding">
-				<a href="assets/images/ph.jpg" class="project project-details"
-					data-glightbox="title: Project Four; description: Mauris ultricies nisi ut dui interdum, ut vehicula felis molestie. Vestibulum ornare ante enim, vel elementum ex venenatis vitae. Sed eu auctor est, eget venenatis nibh interdum...">
-					<figure class="portfolio-item">
-						<div class="hovereffect">
-							<img class="img-responsive" src="assets/images/ph.jpg" alt="">
-							<div class="overlay">
-								<div class="hovereffect-title">
-									<div class="hover-bottom">
-										<h6 class="project-title">Project Four</h6>
-										<p class="project-skill">Web Design, Branding</p>
-									</div>
-									<!-- / hover-bottom -->
-								</div>
-								<!-- / hovereffect-title -->
-							</div>
-							<!-- / overlay -->
-						</div>
-						<!-- / hovereffect -->
-					</figure>
-					<!-- / portfolio-item -->
-				</a>
-				<!-- / project -->
-			</div>
-			<!-- / column -->
-
-			<div class="col-md-6 col-lg-4 grid-item design">
-				<a href="assets/images/ph.jpg" class="project project-details"
-					data-glightbox="title: Project Five; description: Mauris ultricies nisi ut dui interdum, ut vehicula felis molestie. Vestibulum ornare ante enim, vel elementum ex venenatis vitae. Sed eu auctor est, eget venenatis nibh interdum...">
-					<figure class="portfolio-item">
-						<div class="hovereffect">
-							<img class="img-responsive" src="assets/images/ph.jpg" alt="">
-							<div class="overlay">
-								<div class="hovereffect-title">
-									<div class="hover-bottom">
-										<h6 class="project-title">Project Five</h6>
-										<p class="project-skill">Design</p>
-									</div>
-									<!-- / hover-bottom -->
-								</div>
-								<!-- / hovereffect-title -->
-							</div>
-							<!-- / overlay -->
-						</div>
-						<!-- / hovereffect -->
-					</figure>
-					<!-- / portfolio-item -->
-				</a>
-				<!-- / project -->
-			</div>
-			<!-- / column -->
-
-			<div class="col-md-6 col-lg-4 grid-item web-design">
-				<a href="assets/images/ph.jpg" class="project project-details"
-					data-glightbox="title: Project Six; description: Mauris ultricies nisi ut dui interdum, ut vehicula felis molestie. Vestibulum ornare ante enim, vel elementum ex venenatis vitae. Sed eu auctor est, eget venenatis nibh interdum...">
-					<figure class="portfolio-item">
-						<div class="hovereffect">
-							<img class="img-responsive" src="assets/images/ph.jpg" alt="">
-							<div class="overlay">
-								<div class="hovereffect-title">
-									<div class="hover-bottom">
-										<h6 class="project-title">Project Six</h6>
-										<p class="project-skill">Web Design</p>
-									</div>
-									<!-- / hover-bottom -->
-								</div>
-								<!-- / hovereffect-title -->
-							</div>
-							<!-- / overlay -->
-						</div>
-						<!-- / hovereffect -->
-					</figure>
-					<!-- / portfolio-item -->
-				</a>
-				<!-- / project -->
-			</div>
-			<!-- / column -->
-
-			<div class="col-md-6 col-lg-4 grid-item design">
-				<a href="assets/images/ph.jpg" class="project project-details"
-					data-glightbox="title: Project Seven; description: Mauris ultricies nisi ut dui interdum, ut vehicula felis molestie. Vestibulum ornare ante enim, vel elementum ex venenatis vitae. Sed eu auctor est, eget venenatis nibh interdum...">
-					<figure class="portfolio-item">
-						<div class="hovereffect">
-							<img class="img-responsive" src="assets/images/ph.jpg" alt="">
-							<div class="overlay">
-								<div class="hovereffect-title">
-									<div class="hover-bottom">
-										<h6 class="project-title">Project Seven</h6>
-										<p class="project-skill">Design</p>
-									</div>
-									<!-- / hover-bottom -->
-								</div>
-								<!-- / hovereffect-title -->
-							</div>
-							<!-- / overlay -->
-						</div>
-						<!-- / hovereffect -->
-					</figure>
-					<!-- / portfolio-item -->
-				</a>
-				<!-- / project -->
-			</div>
-			<!-- / column -->
-
-			<div class="col-md-6 col-lg-4 grid-item web-design">
-				<a href="assets/images/ph.jpg" class="project project-details"
-					data-glightbox="title: Project Eight; description: Mauris ultricies nisi ut dui interdum, ut vehicula felis molestie. Vestibulum ornare ante enim, vel elementum ex venenatis vitae. Sed eu auctor est, eget venenatis nibh interdum...">
-					<figure class="portfolio-item">
-						<div class="hovereffect">
-							<img class="img-responsive" src="assets/images/ph.jpg" alt="">
-							<div class="overlay">
-								<div class="hovereffect-title">
-									<div class="hover-bottom">
-										<h6 class="project-title">Project Eight</h6>
-										<p class="project-skill">Web Design</p>
-									</div>
-									<!-- / hover-bottom -->
-								</div>
-								<!-- / hovereffect-title -->
-							</div>
-							<!-- / overlay -->
-						</div>
-						<!-- / hovereffect -->
-					</figure>
-					<!-- / portfolio-item -->
-				</a>
-				<!-- / project -->
-			</div>
-			<!-- / column -->
-
-			<div class="col-md-6 col-lg-4 grid-item design branding">
-				<a href="assets/images/ph.jpg" class="project project-details"
-					data-glightbox="title: Project Nine; description: Mauris ultricies nisi ut dui interdum, ut vehicula felis molestie. Vestibulum ornare ante enim, vel elementum ex venenatis vitae. Sed eu auctor est, eget venenatis nibh interdum...">
-					<figure class="portfolio-item">
-						<div class="hovereffect">
-							<img class="img-responsive" src="assets/images/ph.jpg" alt="">
-							<div class="overlay">
-								<div class="hovereffect-title">
-									<div class="hover-bottom">
-										<h6 class="project-title">Project Nine</h6>
-										<p class="project-skill">Design, Branding</p>
-									</div>
-									<!-- / hover-bottom -->
-								</div>
-								<!-- / hovereffect-title -->
-							</div>
-							<!-- / overlay -->
-						</div>
-						<!-- / hovereffect -->
-					</figure>
-					<!-- / portfolio-item -->
-				</a>
-				<!-- / project -->
-			</div>
-			<!-- / column -->
-		</div>
-		<!-- / row -->
-	</div>
-	<!-- / container -->
-</section>
-<!-- / works -->
- --%>
+ 
+  <section id="testimonials" class="lg">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title mb-15" data-aos="fade-down">TESTIMONIALS</h2>
+                   	<% for(int i=0; i<=5; i++) { %>
+                    <div class="spacer-line border-white mb-80">&nbsp;</div>
+                </div><!-- / text-center -->
+                <div id="testimonials-swiper" class="swiper-container pagination-down">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card card-w-raised-img-top mb-0">
+                                <div class="card-body text-center">
+                                    <img class="card-raised-img-top mb-20 circle raised-sm"  alt="" style="max-width: 150px;">
+                                    <p class="ratings mb-0">
+                                        <i class="fas fa-star fs-12 va-middle"></i>
+                                        <i class="fas fa-star va-middle"></i>
+                                        <i class="fas fa-star fs-20 va-middle"></i>
+                                        <i class="fas fa-star va-middle"></i>
+                                        <i class="fas fa-star fs-12 va-middle"></i>
+                                    </p><!-- / ratings -->
+                                    <p class="card-text mb-15">너무 재밌다 내밥친구.</p>
+                                    <p class="mb-0 fs-12 fw-regular">- 홍길동</p>
+                                </div><!-- / card-body -->
+                                </div>
+                                </div>
+                                </div>
+                                <% } %>
+                                </div>
+                                </div>
+                                </section>
+                            
 
 
 <section id="contact" class="xl">
