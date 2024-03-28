@@ -23,14 +23,31 @@
 </head>
 <style>
 
- .nav-link {
+.nav-link {
         color: black; /* 글씨 색을 검정색으로 변경 */
         font-weight: bold; /* 글씨를 진하게 */
         font-size: 1.5em; /* 기본 글씨 크기보다 조금 크게 */
     }
+    
+.proType {
+	text-align: right;
+}
+
+.searchBar {
+  position: relative;
+  width: 300px;
+}
+
+#ottBar{
+	color: white;
+}
+
+.container {
+	background-color: #gray;
+
+}
 </style>
 <body>
-
     <div id="loader-wrapper">
         <div id="loader"></div>
         <div class="loader-section section-left"></div>
@@ -38,18 +55,15 @@
     </div>
 
     <div id="#top"></div>
+    
+    
+   
+    
 
-    <nav class="navbar navbar-expand-lg navbar-light mobile-white-nav absolute top-0 left-0 right-0">
+    <header class="fh p-0 v-center bg-img jarallax" data-jarallax data-speed="0.8" style="background-image: url(assets/images/ott_white.jpg);">
         <div class="container">
-
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggle-nav-center" aria-controls="navbar-toggle-nav-center" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="icon-bar top-bar"></span>
-                <span class="icon-bar middle-bar"></span>
-                <span class="icon-bar bottom-bar"></span>
-                <span class="sr-only">Toggle navigation</span>
-            </button><!-- / navbar-toggler -->
-
-            	
+        <nav id="ottBar" class="navbar navbar-expand-lg navbar-light mobile-white-nav absolute top-0 left-0 right-0">
+        <div class="container"  >
                 <div class="text-center" style="padding-top: 20px; margin: 0 auto; "> <!-- 상단 패딩 추가 -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -68,26 +82,22 @@
                         <a class="nav-link last-menu-item" href="components.html">디즈니 플러스</a>
                     </li>
                 </ul><!-- / navbar-nav -->
-
+					</div>
                 <ul class="navbar-button p-0 m-0 ml-30">
                     <li class="nav-item">
                     </li>
-                </ul><!-- / navbar-button -->
+                </ul><!-- / navbar-button --
             </div><!-- / navbar-collapse -->
         </div><!-- / container -->
     </nav>
-   
-
-    <header class="fh p-0 v-center bg-img jarallax" data-jarallax data-speed="0.8" style="background-image: url(assets/images/ott_white.jpg);">
-        <div class="container">
             <div class="header-content">
                 <div class="row v-center">
                     <div class="col-lg-4 z-index-1 tablet-lg-top-45">
                         <h6 class="fs-18 text-primary">어떤 걸 볼까?</h6>
                         <h2 class="page-title mb-20">둘러보기</h2>
                         <p class="header-text fw-regular fs-18">무엇을 봐야할지 망설여지신다구요? <br>지금'위티'들의 리뷰를 확인하세요!!</p>
-                        <a href="#landings" class="btn btn-primary mr-5"><i class="fas fa-window-restore mr-5"></i> <span>인기작</span></a>
-                        <a href="#features" class="btn btn-primary-light mr-5"><i class="fas fa-cog mr-5"></i> <span>추천작</span></a>
+                        <a href="#landings" class="btn btn-primary mr-5"><i class="fas fa-window-restore mr-5"></i> <span>파티참여</span></a>
+                        <a href="#features" class="btn btn-primary-light mr-5"><i class="fas fa-cog mr-5"></i> <span>요금표 보기</span></a>
                     </div><!-- / column -->
                     <div class="col-lg-8 text-right">
                         <img src="assets/images/ott.jpg" alt="" class="z-index-2 relative rellax w-80 tablet-lg-hidden" data-rellax-speed="2" data-rellax-percentage="0.5">
@@ -97,17 +107,29 @@
         </div><!-- / container -->
     </header>
 
+	
+
     <div class="main-container p-0">
 
         <section id="landings" class="lg">
             <div class="container">
-                <div class="text-center">
-                    <h2 class="section-title mb-15" data-aos="fade-down">뭐가 재밌을까?</h2>
                     <div class="spacer-line border-primary mb-15">&nbsp;</div>
-                    <p class="lead w-30 m-x-auto mb-70" data-aos="fade-in" data-aos-delay="100">요즘 인기 많은 프로그램!</p>
+                <div class="text-center" id="middleBar">
+                    <h2 class="section-title mb-15" data-aos="fade-down">인기 있는 방송 한눈에 보기!</h2>
+                    <div>
+                    <p class="lead w-30 m-x-auto mb-70" data-aos="fade-in" data-aos-delay="100">
+                    <input type="text" class="searchBar" placeholder="프로그램 검색" ><button>검색</button>
+                    </p>
+                    </div>
                 </div><!-- / text-center -->
-                <div class="sorting">
+              
+                <div class="proType">
+   	
+  
+  
     <p>
+    	
+       <a href="id="allpro">전체</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
        <a href="id="movie">영화</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
        <a href="id="drama">드라마</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
        <a href="id="enter">예능</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
@@ -129,6 +151,10 @@
                         </a><!-- / demo-item-link -->
                     </div><!-- / column -->
                     <% } %>
+                    </div>
+                    </div>
+                    </section>
+                   
                     
 				
 
