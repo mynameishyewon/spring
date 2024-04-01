@@ -147,6 +147,26 @@ li a:hover {
 	align-items: center; /* 세로 방향 중앙 정렬 */
 	height: 100vh; /* 높이를 화면 높이와 동일하게 설정 */
 }
+
+.reviewWriteBox {
+	
+}
+
+.container-center {
+	/* justify-content: center; /* 가로 방향 중앙 정렬 */
+	
+}
+
+.reviewWriteBox {
+	width: 100%; /* 또는 원하는 최대 너비 */
+	max-width: 1200px; /* 최대 너비를 설정하여 너무 넓어지는 것을 방지 */
+	margin: 0 auto; /* 가운데 정렬 */
+}
+
+/* 부트스트랩 그리드 시스템을 사용하지 않을 경우 직접 너비를 설정 */
+.reviewWriteBox .col-lg-6 {
+	width: 100%; /* 부모 요소의 100% 너비를 차지하도록 설정 */
+}
 </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#nav-scroll">
@@ -161,8 +181,6 @@ li a:hover {
 					플러스</a></li>
 		</ul>
 	</div>
-
-
 
 	<header class="fh p-0 v-center bg-white">
 		<div class="container">
@@ -199,151 +217,132 @@ li a:hover {
 	</div>
 
 
-	<section id="testimonials" class="lg">
-		<div class="container">
-			<div class="text-center">
-				<h2 class="section-title mb-15" data-aos="fade-down">한 눈에 보는 리뷰</h2>
-				<div class="spacer-line border-primary mb-15">&nbsp;</div>
+	<section class="reviewWriteBox"
+		style="display: flex; justify-content: center;">
+		<div class="col-lg-6 tablet-lg-top-45"
+			style="justify-content: center;">
+			<h2 class="mb-5" style="text-align: center;">작품에 대한 리뷰를 남겨주세요!</h2>
+			<p class="lead mb-20" style="text-align: center;">리뷰는 위티들에게 도움이
+				됩니다.</p>
 
-				<%
-				for (int i = 0; i <= 5; i++) {
-				%>
-				<div class="spacer-line border-white mb-80">&nbsp;</div>
-			</div>
-			<!-- / text-center -->
-			<div id="testimonials-swiper"
-				class="swiper-container pagination-down">
-					<div class="swiper-slide">
-						<div class="card card-w-raised-img-top mb-0">
-							<div class="card-body text-center">
-								<img class="card-raised-img-top mb-20 circle raised-sm" alt=""
-									style="max-width: 150px;">
-								<p class="ratings mb-0">
-									<i class="fas fa-star fs-12 va-middle"></i> <i
-										class="fas fa-star va-middle"></i> <i
-										class="fas fa-star fs-20 va-middle"></i> <i
-										class="fas fa-star va-middle"></i> <i
-										class="fas fa-star fs-12 va-middle"></i>
-								</p>
-								<!-- / ratings -->
-								<p class="card-text mb-15">너무 재밌다 내밥친구.</p>
-								<p class="mb-0 fs-12 fw-regular">- 홍길동</p>
-							</div>
-							<!-- / card-body -->
-						</div>
-					</div>
-				</div>
-				<%
-				}
-				%>
-			</div>
-	</section>
+			<div class="col-lg-6">
+				<div id="reviewWriteBox" class="promo-box p-y-80 p-x-50"
+					data-aos="fade-up" data-aos-delay="300">
+					<form class="needs-validation" id="form-validation5"
+						novalidate="novalidate">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<p>평점 5개 만점!</p>
+									<h5>★★★★★</h5>
 
-
-
-	<section id="contact" class="xl">
-		<div class="container">
-			<div class="row v-center">
-				<div class="col-lg-6 tablet-lg-top-45">
-					<h2 class="mb-5">작품에 대한 리뷰를 남겨주세요!</h2>
-					<p class="lead mb-20">리뷰는 위티들에게 도움이 됩니다.</p>
-					<div class="accordion minimal-accordion"
-						id="minimal-accordionExample" data-aos="fade-up"
-						data-aos-delay="100">
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="minimal-headingOne">
-								<button class="accordion-button" type="button"
-									data-bs-toggle="collapse" data-bs-target="#minimal-collapseOne"
-									aria-expanded="true" aria-controls="minimal-collapseOne">
-									리뷰는 어떻게 선정되나요? <span><i class="fas fa-chevron-down"></i></span>
-								</button>
-							</h2>
-							<!-- / accordion-header -->
-							<div id="minimal-collapseOne"
-								class="accordion-collapse collapse show"
-								aria-labelledby="minimal-headingOne"
-								data-bs-parent="#minimal-accordionExample">
-								<div class="accordion-body">잘쓰는 사람들은 포인트 지급 예정입니다.</div>
-								<!-- / accordion-body -->
-							</div>
-							<!-- / collapse -->
-						</div>
-						<!-- / accordion-item -->
-
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="minimal-headingTwo">
-								<button class="accordion-button collapsed" type="button"
-									data-bs-toggle="collapse" data-bs-target="#minimal-collapseTwo"
-									aria-expanded="false" aria-controls="minimal-collapseTwo">
-									리뷰는 어떻게 작성해야하나요? <span><i class="fas fa-chevron-down"></i></span>
-								</button>
-							</h2>
-							<!-- / accordion-header -->
-							<div id="minimal-collapseTwo" class="accordion-collapse collapse"
-								aria-labelledby="minimal-headingTwo"
-								data-bs-parent="#minimal-accordionExample">
-								<div class="accordion-body">감명깊었던 내용을 작성해</div>
-								<!-- / accordion-body -->
-							</div>
-							<!-- / collapse -->
-						</div>
-						<!-- / accordion-item -->
-
-
-					</div>
-					<!-- / accordion -->
-				</div>
-				<!-- / column -->
-				<div class="col-lg-6">
-					<div class="promo-box p-y-80 p-x-50" data-aos="fade-up"
-						data-aos-delay="300">
-						<form class="needs-validation" id="form-validation5"
-							novalidate="novalidate">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<p>평점 5개 만점!</p>
-									</div>
-									<!-- / form-group -->
 								</div>
-								<!-- / column -->
-
-								<div class="col-md-6">
-									<div class="form-group">
-										<p>★★★★★</p>
-									</div>
-									<!-- / form-group -->
-								</div>
-								<!-- / column -->
-
-								<div class="col-md-12">
-									<p>위티만의 두줄리뷰를 남겨보세요!</p>
-									<!-- / form-group -->
-								</div>
-								<!-- / column -->
 							</div>
-							<!-- / row -->
-							<div class="form-group">
-								<textarea id="contact-message6" class="form-control"
-									name="inputMessage6" rows="5" placeholder="&#xf4ad; Message"
-									required=""
-									style="font-family: 'Font Awesome 5 Free', sans-serif !important; font-weight: 400; min-height: 115px; max-height: 150px;"></textarea>
+							<div class="col-md-6">
+								<div class="form-group"></div>
 							</div>
-							<button type="submit" class="btn btn-primary btn-submit">리뷰등록</button>
-						</form>
-						<!-- / form-group -->
-					</div>
-					<!-- / promo-box -->
+
+						</div>
+						<div class="form-group">
+							<textarea id="contact-message6" class="form-control"
+								name="inputMessage6" rows="5" placeholder="&#xf4ad; Message"
+								required=""
+								style="font-family: 'Font Awesome 5 Free', sans-serif !important; font-weight: 400; min-height: 115px; max-height: 150px;"></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary btn-submit">리뷰등록</button>
+					</form>
 				</div>
-				<!-- / column -->
 			</div>
-			<!-- / row -->
 		</div>
-		<!-- / container -->
 	</section>
-	<!-- / contact -->
-	</div>
-	<!-- / main-container -->
+
+
+	<%
+	for (int i = 0; i <= 5; i++) {
+	%>
+	<section class="reviewWriteBox"
+		style="display: flex; justify-content: center;">
+		<div class="col-lg-6 tablet-lg-top-45"
+			style="justify-content: center;">
+			<div class="col-lg-6">
+				<div id="reviewWriteBox" class="promo-box p-y-80 p-x-50"
+					data-aos="fade-up" data-aos-delay="300">
+					<form class="needs-validation" id="form-validation5"
+						novalidate="novalidate">
+						<div class="row">
+							<div class="col-md-6">
+								<div style="display: flex; align-items: center;">
+									<h5 style="color: orange; margin-right: 10px;">★★★★★</h5>
+									<h7>2024-04-15</h7>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group"></div>
+							</div>
+
+						</div>
+						<div class="text-group">
+							<p id="contact-message6" class="form-control"
+								name="inputMessage6" rows="5" placeholder="&#xf4ad; Message"
+								required=""
+								style="font-family: 'Font Awesome 5 Free', sans-serif !important; font-weight: 400; min-height: 115px; max-height: 150px;">재밌어요!</p>
+						</div>
+						<button>리뷰 삭제</button>
+						&nbsp;
+						<button>리뷰 수정</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<%
+	}
+	%>
+
+	<%--
+	<%
+	for (int i = 0; i <= 5; i++) {
+	%>
+	<section class="reviewWriteBox"
+		style="display: flex; justify-content: center;">
+		<div class="col-lg-6 tablet-lg-top-45"
+			style="justify-content: center;">
+			<div class="col-lg-6">
+				<div id="reviewWriteBox" class="promo-box p-y-80 p-x-50"
+					data-aos="fade-up" data-aos-delay="300">
+					<form class="needs-validation" id="form-validation5"
+						novalidate="novalidate">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<p>평점 5개 만점!</p>
+									<h5>★★★★★</h5>
+
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group"></div>
+							</div>
+
+						</div>
+						<div class="form-group">
+							<p id="contact-message6" class="form-control"
+								name="inputMessage6" rows="5" placeholder="&#xf4ad; Message"
+								required=""
+								style="font-family: 'Font Awesome 5 Free', sans-serif !important; font-weight: 400; min-height: 115px; max-height: 150px;"></p>
+						</div>
+						<button>리뷰 삭제</button>
+						&nbsp;
+						<button>리뷰 수정</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<%
+	}
+	%>
+ --%>
 
 
 
