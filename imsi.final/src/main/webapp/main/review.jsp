@@ -92,8 +92,6 @@ li a:hover {
 .clearfix {
 	font-size: 13px
 }
-
-
 </style>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -116,293 +114,281 @@ li a:hover {
 <link rel="stylesheet" href="assets/css/fontawesome-all.min.css"
 	type="text/css">
 </head>
- <style>
-        .navbar-nav {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #f0f0f0; /* 네비게이션 바의 배경색 */
-            text-align: center;
-        }
-
-        .nav-item {
-            display: inline; /* 가로로 배치 */
-            margin-right: 10px; /* 오른쪽 여백 추가 */
-        }
-
-        .nav-link {
-            display: inline-block;
-            color: black; /* 글씨 색을 검정색으로 변경 */
-            font-weight: bold; /* 글씨를 진하게 */
-            font-size: 1.5em; /* 기본 글씨 크기보다 조금 크게 */
-            margin-right: 10px;
-        }
-
-        .nav-link:hover {
-            background-color: #ddd; /* 마우스 오버 시 배경색 변경 */
-        }
-        .header-content {
-    display: flex;
-    justify-content: center; /* 가로 방향 중앙 정렬 */
-    align-items: center; /* 세로 방향 중앙 정렬 */
-    height: 100vh; /* 높이를 화면 높이와 동일하게 설정 */
+<style>
+.navbar-nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #f0f0f0; /* 네비게이션 바의 배경색 */
+	text-align: center;
 }
-    </style>
+
+.nav-item {
+	display: inline; /* 가로로 배치 */
+	margin-right: 10px; /* 오른쪽 여백 추가 */
+}
+
+.nav-link {
+	display: inline-block;
+	color: black; /* 글씨 색을 검정색으로 변경 */
+	font-weight: bold; /* 글씨를 진하게 */
+	font-size: 1.5em; /* 기본 글씨 크기보다 조금 크게 */
+	margin-right: 10px;
+}
+
+.nav-link:hover {
+	background-color: #ddd; /* 마우스 오버 시 배경색 변경 */
+}
+
+.header-content {
+	display: flex;
+	justify-content: center; /* 가로 방향 중앙 정렬 */
+	align-items: center; /* 세로 방향 중앙 정렬 */
+	height: 100vh; /* 높이를 화면 높이와 동일하게 설정 */
+}
+</style>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#nav-scroll">
-    <div class="text-center" style="margin: 0 auto; padding-top: 20px;"> <!-- 상단 패딩 추가 -->
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#landings">넷플릭스</a>&nbsp;&nbsp;
-                <a class="nav-link" href="#pages">웨이브</a>&nbsp;&nbsp;
-                <a class="nav-link" href="#features">왓챠</a>&nbsp;&nbsp;
-                <a class="nav-link last-menu-item" href="components.html">티빙</a>&nbsp;&nbsp;
-                <a class="nav-link last-menu-item" href="components.html">디즈니 플러스</a>
-            </li>
-        </ul>
-    </div>
-
-                
-
-<header class="fh p-0 v-center bg-white">
-    <div class="container">
-        <div class="header-content">
-            <div class="row v-center">
-                <div class="col-lg-5 text-right">
-                    <!-- .img-fluid 클래스 추가 -->
-                    <img src="assets/images/tear.jpg" alt=""
-                        class="img-fluid z-index-2 relative rellax tablet-lg-hidden"
-                        data-rellax-speed="2" data-rellax-percentage="0.5">
-                </div>
-                <div class="col-lg-6 z-index-1 tablet-lg-top-45">
-                    <h2 class="page-title mb-0">눈물의 여왕(제목)</h2>
-                    <p class="lead w-80 m-y-30" data-aos="fade-in" data-aos-delay="100">이런이런 내용의 드라마 입니다.(내용)</p>
-                    <a href="#about-us" class="btn btn-outline-primary mr-5"><i class="fas fa-user mr-5"></i> <span>위티 참여하기</span></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-
-
-<div style="display: flex; justify-content: center;">
-	<div class="youtube-video-container"
-		style="position: relative; padding-bottom: 33.75%; width: 70%; overflow: hidden;">
-		<iframe
-			style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-			src="https://www.youtube.com/embed/1q2fe127Azc" frameborder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-			allowfullscreen></iframe>
+	<div class="text-center" style="margin: 0 auto; padding-top: 20px;">
+		<!-- 상단 패딩 추가 -->
+		<ul class="navbar-nav">
+			<li class="nav-item"><a class="nav-link" href="#landings">넷플릭스</a>&nbsp;&nbsp;
+				<a class="nav-link" href="#pages">웨이브</a>&nbsp;&nbsp; <a
+				class="nav-link" href="#features">왓챠</a>&nbsp;&nbsp; <a
+				class="nav-link last-menu-item" href="components.html">티빙</a>&nbsp;&nbsp;
+				<a class="nav-link last-menu-item" href="components.html">디즈니
+					플러스</a></li>
+		</ul>
 	</div>
-</div>
 
 
 
-<div class="text-center p-y-70">
-	<h2 class="section-title mb-15" data-aos="fade-down">한눈에보는 리뷰</h2>
-	<div class="spacer-line border-primary mb-15">&nbsp;</div>
-</div>
-<!-- / text-center -->
-
-<div class="row">
-		<% for(int i=0; i<=5; i++) { %>
-	<div class="col-lg-4">
-		<div class="card raised" data-aos="fade-up">
-			<div class="card-body text-center">
-				<p class="mb-5 fw-medium fs-14 lsp-2x">2020-01-01</p>
-				<p class="card-text mb-15">너무 재밌다 내밥친구.구구구구구절절절절구국ㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱ</p>
-				<
-                      <p class="mb-0 fs-12 fw-regular">닉네임</p>             
+	<header class="fh p-0 v-center bg-white">
+		<div class="container">
+			<div class="header-content">
+				<div class="row v-center">
+					<div class="col-lg-5 text-right">
+						<!-- .img-fluid 클래스 추가 -->
+						<img src="assets/images/tear.jpg" alt=""
+							class="img-fluid z-index-2 relative rellax tablet-lg-hidden"
+							data-rellax-speed="2" data-rellax-percentage="0.5">
+					</div>
+					<div class="col-lg-6 z-index-1 tablet-lg-top-45">
+						<h2 class="page-title mb-0">눈물의 여왕(제목)</h2>
+						<p class="lead w-80 m-y-30" data-aos="fade-in"
+							data-aos-delay="100">이런이런 내용의 드라마 입니다.(내용)</p>
+						<a href="#about-us" class="btn btn-outline-primary mr-5"><i
+							class="fas fa-user mr-5"></i> <span>위티 참여하기</span></a>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-	<% } %>
-
-	
- 
-  <section id="testimonials" class="lg">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-title mb-15" data-aos="fade-down">TESTIMONIALS</h2>
-                   	<% for(int i=0; i<=5; i++) { %>
-                    <div class="spacer-line border-white mb-80">&nbsp;</div>
-                </div><!-- / text-center -->
-                <div id="testimonials-swiper" class="swiper-container pagination-down">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="card card-w-raised-img-top mb-0">
-                                <div class="card-body text-center">
-                                    <img class="card-raised-img-top mb-20 circle raised-sm"  alt="" style="max-width: 150px;">
-                                    <p class="ratings mb-0">
-                                        <i class="fas fa-star fs-12 va-middle"></i>
-                                        <i class="fas fa-star va-middle"></i>
-                                        <i class="fas fa-star fs-20 va-middle"></i>
-                                        <i class="fas fa-star va-middle"></i>
-                                        <i class="fas fa-star fs-12 va-middle"></i>
-                                    </p><!-- / ratings -->
-                                    <p class="card-text mb-15">너무 재밌다 내밥친구.</p>
-                                    <p class="mb-0 fs-12 fw-regular">- 홍길동</p>
-                                </div><!-- / card-body -->
-                                </div>
-                                </div>
-                                </div>
-                                <% } %>
-                                </div>
-                                </div>
-                                </section>
-                            
+	</header>
 
 
-<section id="contact" class="xl">
-	<div class="container">
-		<div class="row v-center">
-			<div class="col-lg-6 tablet-lg-top-45">
-				<h2 class="mb-5">작품에 대한 리뷰를 남겨주세요!</h2>
-				<p class="lead mb-20">리뷰는 위티들에게 도움이 됩니다.</p>
-				<div class="accordion minimal-accordion"
-					id="minimal-accordionExample" data-aos="fade-up"
-					data-aos-delay="100">
-					<div class="accordion-item">
-						<h2 class="accordion-header" id="minimal-headingOne">
-							<button class="accordion-button" type="button"
-								data-bs-toggle="collapse" data-bs-target="#minimal-collapseOne"
-								aria-expanded="true" aria-controls="minimal-collapseOne">
-								리뷰는 어떻게 선정되나요? <span><i class="fas fa-chevron-down"></i></span>
-							</button>
-						</h2>
-						<!-- / accordion-header -->
-						<div id="minimal-collapseOne"
-							class="accordion-collapse collapse show"
-							aria-labelledby="minimal-headingOne"
-							data-bs-parent="#minimal-accordionExample">
-							<div class="accordion-body">잘쓰는 사람들은 포인트 지급 예정입니다.</div>
-							<!-- / accordion-body -->
-						</div>
-						<!-- / collapse -->
-					</div>
-					<!-- / accordion-item -->
-
-					<div class="accordion-item">
-						<h2 class="accordion-header" id="minimal-headingTwo">
-							<button class="accordion-button collapsed" type="button"
-								data-bs-toggle="collapse" data-bs-target="#minimal-collapseTwo"
-								aria-expanded="false" aria-controls="minimal-collapseTwo">
-								리뷰는 어떻게 작성해야하나요? <span><i class="fas fa-chevron-down"></i></span>
-							</button>
-						</h2>
-						<!-- / accordion-header -->
-						<div id="minimal-collapseTwo" class="accordion-collapse collapse"
-							aria-labelledby="minimal-headingTwo"
-							data-bs-parent="#minimal-accordionExample">
-							<div class="accordion-body">
-								감명깊었던 내용을 작성해</div>
-							<!-- / accordion-body -->
-						</div>
-						<!-- / collapse -->
-					</div>
-					<!-- / accordion-item -->
-
-					
-				</div>
-				<!-- / accordion -->
-			</div>
-			<!-- / column -->
-			<div class="col-lg-6">
-				<div class="promo-box p-y-80 p-x-50" data-aos="fade-up"
-					data-aos-delay="300">
-					<form class="needs-validation" id="form-validation5"
-						novalidate="novalidate">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<p>평점 5개 만점!</p>
-								</div>
-								<!-- / form-group -->
-							</div>
-							<!-- / column -->
-
-							<div class="col-md-6">
-								<div class="form-group">
-									<p>★★★★★</p>
-								</div>
-								<!-- / form-group -->
-							</div>
-							<!-- / column -->
-
-							<div class="col-md-12">
-								<p>위티만의 두줄리뷰를 남겨보세요!</p>
-								<!-- / form-group -->
-							</div>
-							<!-- / column -->
-						</div>
-						<!-- / row -->
-						<div class="form-group">
-							<textarea id="contact-message6" class="form-control"
-								name="inputMessage6" rows="5" placeholder="&#xf4ad; Message"
-								required=""
-								style="font-family: 'Font Awesome 5 Free', sans-serif !important; font-weight: 400; min-height: 115px; max-height: 150px;"></textarea>
-						</div>
-						<button type="submit" class="btn btn-primary btn-submit">리뷰등록</button>
-					</form>
-					<!-- / form-group -->
-				</div>
-				<!-- / promo-box -->
-			</div>
-			<!-- / column -->
+	<div style="display: flex; justify-content: center;">
+		<div class="youtube-video-container"
+			style="position: relative; padding-bottom: 33.75%; width: 70%; overflow: hidden;">
+			<iframe
+				style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+				src="https://www.youtube.com/embed/1q2fe127Azc" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
 		</div>
-		<!-- / row -->
 	</div>
-	<!-- / container -->
-</section>
-<!-- / contact -->
-</div>
-<!-- / main-container -->
+
+
+	<section id="testimonials" class="lg">
+		<div class="container">
+			<div class="text-center">
+				<h2 class="section-title mb-15" data-aos="fade-down">한 눈에 보는 리뷰</h2>
+				<div class="spacer-line border-primary mb-15">&nbsp;</div>
+
+				<%
+				for (int i = 0; i <= 5; i++) {
+				%>
+				<div class="spacer-line border-white mb-80">&nbsp;</div>
+			</div>
+			<!-- / text-center -->
+			<div id="testimonials-swiper"
+				class="swiper-container pagination-down">
+					<div class="swiper-slide">
+						<div class="card card-w-raised-img-top mb-0">
+							<div class="card-body text-center">
+								<img class="card-raised-img-top mb-20 circle raised-sm" alt=""
+									style="max-width: 150px;">
+								<p class="ratings mb-0">
+									<i class="fas fa-star fs-12 va-middle"></i> <i
+										class="fas fa-star va-middle"></i> <i
+										class="fas fa-star fs-20 va-middle"></i> <i
+										class="fas fa-star va-middle"></i> <i
+										class="fas fa-star fs-12 va-middle"></i>
+								</p>
+								<!-- / ratings -->
+								<p class="card-text mb-15">너무 재밌다 내밥친구.</p>
+								<p class="mb-0 fs-12 fw-regular">- 홍길동</p>
+							</div>
+							<!-- / card-body -->
+						</div>
+					</div>
+				</div>
+				<%
+				}
+				%>
+			</div>
+	</section>
 
 
 
-<!-- Core JavaScript -->
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/theme.js"></script>
+	<section id="contact" class="xl">
+		<div class="container">
+			<div class="row v-center">
+				<div class="col-lg-6 tablet-lg-top-45">
+					<h2 class="mb-5">작품에 대한 리뷰를 남겨주세요!</h2>
+					<p class="lead mb-20">리뷰는 위티들에게 도움이 됩니다.</p>
+					<div class="accordion minimal-accordion"
+						id="minimal-accordionExample" data-aos="fade-up"
+						data-aos-delay="100">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="minimal-headingOne">
+								<button class="accordion-button" type="button"
+									data-bs-toggle="collapse" data-bs-target="#minimal-collapseOne"
+									aria-expanded="true" aria-controls="minimal-collapseOne">
+									리뷰는 어떻게 선정되나요? <span><i class="fas fa-chevron-down"></i></span>
+								</button>
+							</h2>
+							<!-- / accordion-header -->
+							<div id="minimal-collapseOne"
+								class="accordion-collapse collapse show"
+								aria-labelledby="minimal-headingOne"
+								data-bs-parent="#minimal-accordionExample">
+								<div class="accordion-body">잘쓰는 사람들은 포인트 지급 예정입니다.</div>
+								<!-- / accordion-body -->
+							</div>
+							<!-- / collapse -->
+						</div>
+						<!-- / accordion-item -->
 
-<!-- aos -->
-<script src="assets/js/aos.js"></script>
-<script>
-	AOS.init({
-		duration : 1200,
-	})
-</script>
-<!-- / aos -->
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="minimal-headingTwo">
+								<button class="accordion-button collapsed" type="button"
+									data-bs-toggle="collapse" data-bs-target="#minimal-collapseTwo"
+									aria-expanded="false" aria-controls="minimal-collapseTwo">
+									리뷰는 어떻게 작성해야하나요? <span><i class="fas fa-chevron-down"></i></span>
+								</button>
+							</h2>
+							<!-- / accordion-header -->
+							<div id="minimal-collapseTwo" class="accordion-collapse collapse"
+								aria-labelledby="minimal-headingTwo"
+								data-bs-parent="#minimal-accordionExample">
+								<div class="accordion-body">감명깊었던 내용을 작성해</div>
+								<!-- / accordion-body -->
+							</div>
+							<!-- / collapse -->
+						</div>
+						<!-- / accordion-item -->
 
-<!-- Nav-Scroll -->
-<script src="assets/js/nav-fixed.js"></script>
-<script src="assets/js/scroll-top.js"></script>
-<!-- / Nav-Scroll -->
 
-<!-- Jarallax -->
-<script src="assets/js/jarallax.min.js"></script>
-<!-- / Jarallax -->
+					</div>
+					<!-- / accordion -->
+				</div>
+				<!-- / column -->
+				<div class="col-lg-6">
+					<div class="promo-box p-y-80 p-x-50" data-aos="fade-up"
+						data-aos-delay="300">
+						<form class="needs-validation" id="form-validation5"
+							novalidate="novalidate">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<p>평점 5개 만점!</p>
+									</div>
+									<!-- / form-group -->
+								</div>
+								<!-- / column -->
 
-<!-- Rellax -->
-<script src="assets/js/rellax.min.js"></script>
-<script>
-	var rellax = new Rellax('.rellax');
-</script>
-<!-- / Rellax -->
+								<div class="col-md-6">
+									<div class="form-group">
+										<p>★★★★★</p>
+									</div>
+									<!-- / form-group -->
+								</div>
+								<!-- / column -->
 
-<!-- Isotope -->
-<script src="assets/js/isotope.min.js"></script>
-<script src="assets/js/isotope-filter.js"></script>
-<!-- / Isotope -->
+								<div class="col-md-12">
+									<p>위티만의 두줄리뷰를 남겨보세요!</p>
+									<!-- / form-group -->
+								</div>
+								<!-- / column -->
+							</div>
+							<!-- / row -->
+							<div class="form-group">
+								<textarea id="contact-message6" class="form-control"
+									name="inputMessage6" rows="5" placeholder="&#xf4ad; Message"
+									required=""
+									style="font-family: 'Font Awesome 5 Free', sans-serif !important; font-weight: 400; min-height: 115px; max-height: 150px;"></textarea>
+							</div>
+							<button type="submit" class="btn btn-primary btn-submit">리뷰등록</button>
+						</form>
+						<!-- / form-group -->
+					</div>
+					<!-- / promo-box -->
+				</div>
+				<!-- / column -->
+			</div>
+			<!-- / row -->
+		</div>
+		<!-- / container -->
+	</section>
+	<!-- / contact -->
+	</div>
+	<!-- / main-container -->
 
-<!-- GLightbox -->
-<script src="assets/js/glightbox.min.js"></script>
-<script>
-	var lightboxDescription = GLightbox({
-		selector : '.project-details'
-	});
-</script>
-<!-- / GLightbox -->
+
+
+	<!-- Core JavaScript -->
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/theme.js"></script>
+
+	<!-- aos -->
+	<script src="assets/js/aos.js"></script>
+	<script>
+		AOS.init({
+			duration : 1200,
+		})
+	</script>
+	<!-- / aos -->
+
+	<!-- Nav-Scroll -->
+	<script src="assets/js/nav-fixed.js"></script>
+	<script src="assets/js/scroll-top.js"></script>
+	<!-- / Nav-Scroll -->
+
+	<!-- Jarallax -->
+	<script src="assets/js/jarallax.min.js"></script>
+	<!-- / Jarallax -->
+
+	<!-- Rellax -->
+	<script src="assets/js/rellax.min.js"></script>
+	<script>
+		var rellax = new Rellax('.rellax');
+	</script>
+	<!-- / Rellax -->
+
+	<!-- Isotope -->
+	<script src="assets/js/isotope.min.js"></script>
+	<script src="assets/js/isotope-filter.js"></script>
+	<!-- / Isotope -->
+
+	<!-- GLightbox -->
+	<script src="assets/js/glightbox.min.js"></script>
+	<script>
+		var lightboxDescription = GLightbox({
+			selector : '.project-details'
+		});
+	</script>
+	<!-- / GLightbox -->
 
 </body>
 </html>
