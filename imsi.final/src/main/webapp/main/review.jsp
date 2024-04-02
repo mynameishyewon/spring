@@ -264,9 +264,6 @@ li a:hover {
 		style="display: flex; justify-content: center;">
 		<div class="col-lg-6 tablet-lg-top-45"
 			style="justify-content: center;">
-			<div class="col-lg-6">
-				<div id="reviewWriteBox" class="promo-box p-y-80 p-x-50"
-					data-aos="fade-up" data-aos-delay="300">
 					<form class="needs-validation" id="form-validation5"
 						novalidate="novalidate">
 						<div class="row">
@@ -292,8 +289,6 @@ li a:hover {
 						<button>리뷰 수정</button>
 					</form>
 				</div>
-			</div>
-		</div>
 	</section>
 	<%
 	}
