@@ -106,7 +106,7 @@
 				<img class="d-block w-100" src="assets/images/ott_white.jpg"
 					alt="First slide" >
 			</div>
-			<div class="carousel-item">
+			<div class="carousel-item"  style="height: 500px;">
 				<img class="d-block w-100" src="assets/images/ott_white.jpg"
 					alt="Second slide" >
 			</div>
