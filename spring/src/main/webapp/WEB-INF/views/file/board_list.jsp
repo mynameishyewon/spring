@@ -44,7 +44,7 @@ th, td {
 				<td>${fileBoard.subject }</td>
 				<td>${fn:split(fileBoard.filename, "_")[1] }</td>
 				<td align="center">
-					<button type="button">다운로드</button>
+					<button type="button" onclick="fileDownload(${file.Board.idx});">다운로드</button>
 				</td>
 				<td align="center">
 					<button type="button">삭제</button>
@@ -82,5 +82,35 @@ th, td {
 			[다음]
 		</c:otherwise>
 	</c:choose>
+	
+	<script type="text/javascript">
+	function fileDelete(idx) {
+		if(confirm("자료를 정말로 삭제 하시겠습니까?")) {
+			location.href="<c:url vlaue="/file/delete"/>?idx="+idx;
+		}
+		
+	}
+	
+	function fileDownload() {
+		location.href="<c:url vlaue="/file/download"/>?idx="+idx;
+	
+		}
+	}
+	
+	
+	</script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
